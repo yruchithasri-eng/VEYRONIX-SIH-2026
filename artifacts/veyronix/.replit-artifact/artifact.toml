@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "VEYRONIX"
+description = "A local-first smart medical-waste collection, segregation, traceability, and compliance control center for the SIH 2026 prototype."
+version = "1.0.0"
+id = "artifacts/veyronix"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20683
+
+[services.development]
+run = "pnpm --filter @workspace/veyronix run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/veyronix", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/veyronix/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20683"
+BASE_PATH = "/"

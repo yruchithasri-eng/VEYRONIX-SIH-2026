@@ -1,0 +1,17 @@
+{
+  "name": "VEYRONIX Medical Waste Operations",
+  "short_name": "VEYRONIX",
+  "description": "Smart medical-waste collection, AI segregation, trolley tracking, traceability, and compliance.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f2f5fc",
+  "theme_color": "#1f2858",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

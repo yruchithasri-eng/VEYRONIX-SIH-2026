@@ -1,0 +1,1 @@
+- [VEYRONIX prototype constraints](veyronix-prototype.md) — SIH demo stays local-first, uses Asia/Kolkata time, and simulates hardware/AI/GPS without external services.
